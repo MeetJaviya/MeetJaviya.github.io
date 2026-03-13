@@ -11,6 +11,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+    @media (max-width: 600px) {
+        .about-img {
+            width: 100% !important;
+            height: auto !important;
+        }
+        .about-div {
+            flex-direction: column !important;
+        }
+    }
+</style>
+
+		
 	</head>
 	<body class="is-preload">
 
@@ -48,15 +61,15 @@
 						<!-- Featured Post -->
 							<article class="post featured">
     <header class="major">
-        <div style="display: flex; align-items: center; gap: 40px; text-align: left; flex-wrap: wrap;">
+        <div class="about-div" style="display: flex; align-items: center; gap: 40px; text-align: left; flex-wrap: wrap;">
             
             <!-- Left: Photo -->
-            <div style="flex: 1; min-width: 280px;">
-                <img src="unnamed.png" alt="Meet Javiya" style="width: 280px; height: 350px; object-fit: cover; object-position: top;" />
+            <div style="flex-shrink: 0;">
+                <img class="about-img" src="unnamed.png" alt="Meet Javiya" style="width: 280px; height: 350px; object-fit: cover; object-position: top;" />
             </div>
 
             <!-- Right: Description -->
-            <div style="flex: 1;">
+            <div style="flex: 1; min-width: 280px;"">
                 <h3 style="margin-bottom: 10px;">Hi, I'm Meet.</h3>
                 <p style="margin: 0; line-height: 1.8;">
                     An impassioned data analyst skilled in <strong>SQL, Python, Power BI, Tableau, Advanced Excel,</strong> and <strong>Apache Kafka</strong> who developed expertise in data engineering, real-time streaming pipelines, and data analytics through hands-on projects, along with analytical and technical abilities to deliver data-driven insights and visualizations.
