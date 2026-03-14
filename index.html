@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>MEET JAVIYA'S Portfolio</title>
@@ -12,153 +7,253 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-    @media (max-width: 600px) {
-        .about-img {
-            width: 100% !important;
-            height: auto !important;
-        }
-        .about-div {
-            flex-direction: column !important;
-        }
-    }
-</style>
+			/* ── About Section ── */
+			.about-div {
+				display: flex;
+				align-items: center;
+				gap: 40px;
+				text-align: left;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 
-		
+			.about-img {
+				width: 280px;
+				height: 350px;
+				object-fit: cover;
+				object-position: top;
+			}
+
+			.about-text {
+				flex: 1;
+				min-width: 280px;
+			}
+
+			/* ── Projects Section ── */
+			#project.posts {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				justify-content: center;
+			}
+
+			#project.posts article {
+				flex: 1 1 300px;
+				max-width: 500px;
+			}
+
+			#project.posts article img {
+				width: 100%;
+				height: 250px;
+				object-fit: cover;
+			}
+
+			/* ── Footer ── */
+			.footer-contact-text {
+				max-width: 600px;
+				margin: 10px auto;
+				font-size: 16px;
+				line-height: 1.5;
+				color: #eee;
+				padding: 0 20px;
+			}
+
+			.footer-buttons a {
+				display: inline-block;
+				padding: 10px 20px;
+				margin: 5px;
+				border: 2px solid #ff8c00;
+				color: #ff8c00;
+				text-decoration: none;
+				font-weight: bold;
+				letter-spacing: 1px;
+				border-radius: 4px;
+			}
+
+			/* ── Mobile ── */
+			@media (max-width: 768px) {
+				.about-div {
+					flex-direction: column;
+					text-align: center;
+				}
+
+				.about-img {
+					width: 100%;
+					max-width: 300px;
+					height: auto;
+				}
+
+				.about-text {
+					min-width: unset;
+					width: 100%;
+					text-align: center;
+				}
+
+				#project.posts {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				#project.posts article {
+					width: 100%;
+					max-width: 100%;
+				}
+
+				.footer-buttons a {
+					display: block;
+					width: 80%;
+					margin: 8px auto;
+					text-align: center;
+				}
+
+				.footer-contact-text {
+					font-size: 14px;
+					padding: 0 15px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.about-img {
+					max-width: 220px;
+				}
+
+				h2 {
+					font-size: 20px !important;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Meet Javiya<br /></h1>
-						<h2>DATA ANALYST</h2>
-						<p>Welcome to my website. I'm a data analysis and data visualisation specialist currently looking for full-time opportunities in the field.
-						</p>
-						<ul class="actions">
-							<li><a href="#contact" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="#contact" class="logo">CONTACT</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/meet-javiya-023788208/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
-							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://github.com/MeetJaviya" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-    <header class="major">
-        <div class="about-div" style="display: flex; align-items: center; gap: 40px; text-align: left; flex-wrap: wrap;">
-            
-            <!-- Left: Photo -->
-            <div style="flex-shrink: 0;">
-                <img class="about-img" src="unnamed.png" alt="Meet Javiya" style="width: 280px; height: 350px; object-fit: cover; object-position: top;" />
-            </div>
-
-            <!-- Right: Description -->
-            <div style="flex: 1; min-width: 280px;"">
-                <h3 style="margin-bottom: 10px;">Hi, I'm Meet.</h3>
-                <p style="margin: 0; line-height: 1.8;">
-                    An impassioned data analyst skilled in <strong>SQL, Python, Power BI, Tableau, Advanced Excel,</strong> and <strong>Apache Kafka</strong> who developed expertise in data engineering, real-time streaming pipelines, and data analytics through hands-on projects, along with analytical and technical abilities to deliver data-driven insights and visualizations.
-                    <br><br>
-                    My day-to-day routine includes work upon data like <strong>pre-processing</strong>, building <strong>real-time pipelines</strong>, performing <strong>exploratory data analysis</strong> and <strong>results communication</strong>.
-                </p>
-            </div>
-
-        </div>
-    </header>
-
-    <ul class="actions special" style="margin-top: 30px;">
-        <li><a href="#project" class="button large">View Project</a></li>
-    </ul>
-</article>
- 
-						<!-- Posts -->
-							<section id="project" class="posts">
-								<article>
-									<header>
-										<h2><a>Healthcare Kafka Streaming</a></h2>
-									</header>
-									<a class="image fit"><img src="HEALTHCARE_DATA.jpg" style="width: 100%; height: 250px; object-fit: cover;" /></a>
-									<p>End-to-end real-time healthcare patient monitoring pipeline using Apache Kafka, Python, and PostgreSQL. Covers data streaming, risk scoring engine, database integration, and live Power BI dashboard to identify high-risk patients and support data-driven clinical decisions.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MeetJaviya/healthcare-kafka-streaming" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a>Ecommerce Customer Analytics</a></h2>
-									</header>
-									<a class="image fit"><img src="Ecommerce.jpeg" style="width: 100%; height: 250px; object-fit: cover;" /></a>
-									<p>End-to-end e-commerce customer analytics and churn prediction project using Python and Scikit-learn. Covers data preprocessing, EDA, feature engineering, model training, and prediction pipeline to identify at-risk customers and support data-driven business decisions.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/MeetJaviya/ecommerce-customer-analytics" class="button">Full Story</a></li>
-									</ul>
-								</article>								
-							</section>
-					</div>
-
-					<footer style="padding:40px 0; text-align:center; font-family:Arial, sans-serif; background-color:#1c1f26; color:#eee;">
-
-						<!-- Contact Section -->
-						<div id="contact" style="margin-bottom:30px;">
-							<h2 style="margin-bottom:10px; font-size:24px; letter-spacing:1px; color:#fff;">CONTACT</h2>
-							<hr style="width:60px; margin:10px auto; border:none; height:2px; background-color:#fff;">
-							<p style="max-width:600px; margin:10px auto; font-size:16px; line-height:1.5; color:#eee;">
-								Feel free to contact me for any question. For projects, please open an issue or pull request on
-								<a href="https://github.com/MeetJaviya" target="_blank" style="color:#ff8c00;">GitHub</a>. 
-								If you want to follow my work, reach me on 
-								<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank" style="color:#ff8c00;">LinkedIn</a>. 
-								Otherwise, send me an email at 
-								<a href="mailto:meetjaviya1622@gmail.com" style="color:#ff8c00;">meetjaviya1622@gmail.com</a>.
-							</p>
-
-							<!-- Contact Buttons -->
-							<div style="margin-top:20px;">
-								<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank"
-									style="display:inline-block; padding:10px 20px; margin:5px; border:2px solid #ff8c00; color:#ff8c00; text-decoration:none; font-weight:bold; letter-spacing:1px; border-radius:4px;">LINKEDIN</a>
-
-								<a href="mailto:meetjaviya1622@gmail.com"
-									style="display:inline-block; padding:10px 20px; margin:5px; border:2px solid #ff8c00; color:#ff8c00; text-decoration:none; font-weight:bold; letter-spacing:1px; border-radius:4px;">MAIL</a>
-							</div>
-						</div>
-
-						<!-- Social Icons Section -->
-						<div style="margin-bottom:20px;">
-							<a href="https://github.com/MeetJaviya" target="_blank" 
-							style="margin:0 10px; color:#fff; font-size:20px;"><i class="fab fa-github"></i></a>
-							<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank" 
-							style="margin:0 10px; color:#fff; font-size:20px;"><i class="fab fa-linkedin-in"></i></a>
-						</div>
-
-						<!-- Footer Bottom Text -->
-						<div style="font-size:14px; color:#aaa;">
-							© Meet Javiya 2026
-						</div>
-					</footer>
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Meet Javiya<br /></h1>
+				<h2>DATA ANALYST</h2>
+				<p>Welcome to my website. I'm a data analysis and data visualisation specialist currently looking for full-time opportunities in the field.</p>
+				<ul class="actions">
+					<li><a href="#contact" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
 			</div>
 
+			<!-- Header -->
+			<header id="header">
+				<a href="#contact" class="logo">CONTACT</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/meet-javiya-023788208/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+					<li><a href="https://github.com/MeetJaviya" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About Section -->
+				<article class="post featured">
+					<header class="major">
+						<div class="about-div">
+
+							<!-- Left: Photo -->
+							<div style="flex-shrink: 0;">
+								<img class="about-img" src="unnamed.png" alt="Meet Javiya" />
+							</div>
+
+							<!-- Right: Description -->
+							<div class="about-text">
+								<h3 style="margin-bottom: 10px;">Hi, I'm Meet.</h3>
+								<p style="margin: 0; line-height: 1.8;">
+									An impassioned data analyst skilled in <strong>SQL, Python, Power BI, Tableau, Advanced Excel,</strong> and <strong>Apache Kafka</strong> who developed expertise in data engineering, real-time streaming pipelines, and data analytics through hands-on projects, along with analytical and technical abilities to deliver data-driven insights and visualizations.
+									<br><br>
+									My day-to-day routine includes work upon data like <strong>pre-processing</strong>, building <strong>real-time pipelines</strong>, performing <strong>exploratory data analysis</strong> and <strong>results communication</strong>.
+								</p>
+							</div>
+
+						</div>
+					</header>
+
+					<ul class="actions special" style="margin-top: 30px;">
+						<li><a href="#project" class="button large">View Project</a></li>
+					</ul>
+				</article>
+
+				<!-- Projects Section -->
+				<section id="project" class="posts">
+					<article>
+						<header>
+							<h2><a>Healthcare Kafka Streaming</a></h2>
+						</header>
+						<a class="image fit"><img src="HEALTHCARE_DATA.jpg" /></a>
+						<p>End-to-end real-time healthcare patient monitoring pipeline using Apache Kafka, Python, and PostgreSQL. Covers data streaming, risk scoring engine, database integration, and live Power BI dashboard to identify high-risk patients and support data-driven clinical decisions.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/MeetJaviya/healthcare-kafka-streaming" class="button">Full Story</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a>Ecommerce Customer Analytics</a></h2>
+						</header>
+						<a class="image fit"><img src="Ecommerce.jpeg" /></a>
+						<p>End-to-end e-commerce customer analytics and churn prediction project using Python and Scikit-learn. Covers data preprocessing, EDA, feature engineering, model training, and prediction pipeline to identify at-risk customers and support data-driven business decisions.</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/MeetJaviya/ecommerce-customer-analytics" class="button">Full Story</a></li>
+						</ul>
+					</article>
+				</section>
+
+			</div>
+
+			<!-- Footer -->
+			<footer style="padding: 40px 0; text-align: center; font-family: Arial, sans-serif; background-color: #1c1f26; color: #eee;">
+
+				<!-- Contact Section -->
+				<div id="contact" style="margin-bottom: 30px;">
+					<h2 style="margin-bottom: 10px; font-size: 24px; letter-spacing: 1px; color: #fff;">CONTACT</h2>
+					<hr style="width: 60px; margin: 10px auto; border: none; height: 2px; background-color: #fff;">
+					<p class="footer-contact-text">
+						Feel free to contact me for any question. For projects, please open an issue or pull request on
+						<a href="https://github.com/MeetJaviya" target="_blank" style="color: #ff8c00;">GitHub</a>.
+						If you want to follow my work, reach me on
+						<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank" style="color: #ff8c00;">LinkedIn</a>.
+						Otherwise, send me an email at
+						<a href="mailto:meetjaviya1622@gmail.com" style="color: #ff8c00;">meetjaviya1622@gmail.com</a>.
+					</p>
+
+					<!-- Contact Buttons -->
+					<div class="footer-buttons" style="margin-top: 20px;">
+						<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank">LINKEDIN</a>
+						<a href="mailto:meetjaviya1622@gmail.com">MAIL</a>
+					</div>
+				</div>
+
+				<!-- Social Icons -->
+				<div style="margin-bottom: 20px;">
+					<a href="https://github.com/MeetJaviya" target="_blank" style="margin: 0 10px; color: #fff; font-size: 20px;"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/meet-javiya-023788208/" target="_blank" style="margin: 0 10px; color: #fff; font-size: 20px;"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div style="font-size: 14px; color: #aaa;">
+					© Meet Javiya 2026
+				</div>
+
+			</footer>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
